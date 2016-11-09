@@ -7,19 +7,19 @@
 </head>
 <body>
   <main>
-    <h1>the library</h1>
-    <p>search for author by name</p>
+    <h1><i class="fa fa-book" aria-hidden="true"></i> the library</h1>
+    <label>search for author by name: </label>
     <input id="authorSearch" >
-    <button type="button" onclick="authSearch()">search</button>
-    <p id='result'></p>
+    <button type="button" onclick="authSearch()"><i class="fa fa-search" aria-hidden="true"></i> search</button>
+    <p class=result" id='result'></p>
 
     <h2>add a book to the library</h2>
-    Tittle: <input id="addTitle">
-    Book: <input id="addBook">
-    <button type="button" onclick="addBook()">add</button>
+    <label>Tittle:</label> <input id="addTitle">
+    <label>Book:</label> <input id="addBook">
+    <button type="button" onclick="addBook()"><i class="fa fa-plus-circle" aria-hidden="true"></i> add</button>
 
     <h2>books currently in the library</h2>
-    <button type="button" onclick="showAllBooks()">show books</button>
+    <button class="btn-list" type="button" onclick="showAllBooks()"><i class="fa fa-list" aria-hidden="true"></i> show books</button>
     <ol id="allTheBooks">
 
     </ol>
@@ -28,5 +28,6 @@
     <p>wmdd 4820 2016</p>
   </footer>
   <script src="app.js"></script>
+  <script src="https://use.fontawesome.com/3975f2472c.js"></script>
 </body>
 </html>
