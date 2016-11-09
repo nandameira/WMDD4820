@@ -6,19 +6,46 @@ html {
 
 body {
   margin-top: 50px;
-  margin-left: 80px;
   font-family: 'Dosis', sans-serif;
+}
+
+main {
+  margin: 0 auto;
+  width: 70%;
+  background-color: #F7F7F7;
+  padding: 0;
+}
+
+label {
+  margin-left: 20px;
+  text-transform: uppercase;
+  color: #113A52;
+  font-weight: 600;
 }
 
 h1 {
   text-transform: uppercase;
+  color:#00C3B6;
+  padding: 20px;
+  background-color: #113A52;
+  text-align: center;
+}
+
+h2 {
+  background-color: #E8E8E8;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px;
+  margin-top:30px;
+  color:#113A52;
 }
 
 input{
     padding:5px; 
-    border:2px solid #ccc; 
+    border:1px solid #113A52; 
     -webkit-border-radius: 5px;
     border-radius: 5px;
+    width: 35%;
 }
 
 input:focus {
@@ -28,18 +55,42 @@ input:focus {
 
 button {
     padding:5px 15px; 
-    background:#ccc; 
+    background: #113A52;
     border:0 none;
     cursor:pointer;
     -webkit-border-radius: 5px;
     border-radius: 5px; 
+    color: white;
 }
 
 button:hover {
-  background: #247E9C;
+  background: #00C3B6;
+  color: #113A52;
 }
 
 footer {
-  margin-top: 100px;
   font-size: small;
+  width: 70%;
+  margin: 0 auto;
+  background-color: #00C3B6;
+  text-align: center;
+  color: white;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.btn-list {
+  margin: auto;
+  width: 30%;
+  text-align: center;
+  font-size: 11pt;
+}
+
+#allTheBooks {
+  background-color: #F7F7F7;
+  margin-left: 20px;
+
+}
+.result {
+  margin-left: 20px;
 }
