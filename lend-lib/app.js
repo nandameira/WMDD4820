@@ -7,9 +7,9 @@ let books = [
 
 function authSearch () {
   let aName = document.getElementById('authorSearch').value
-  let name = books.filter((x) => x.author === aName)
+  let name = books.filter((x) => RegExp(aName.toUpperCase()).test(x.author.toUpperCase()))
   try {
-    document.getElementById('result').innerHTML = 'yes we have at least one book by ' + name[0].author
+    document.getElementById('result').innerHTML = 'Search Result: ' + name[0].author
   }
   catch (err) {
     document.getElementById('result').innerHTML = 'sorry no books by ' + aName
