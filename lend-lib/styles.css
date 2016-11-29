@@ -2,18 +2,25 @@
 
 html {
   padding: 0;
+  margin: 0;
 }
 
 body {
-  margin-top: 50px;
+  margin: 0;
   font-family: 'Dosis', sans-serif;
+  padding: 0;
 }
 
-main {
+#main {
   margin: 0 auto;
-  width: 70%;
   background-color: #F7F7F7;
-  padding: 0;
+}
+
+.wrap {
+  width: 80%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  margin: 0 auto;
 }
 
 label {
@@ -26,9 +33,11 @@ label {
 h1 {
   text-transform: uppercase;
   color:#00C3B6;
+  width: 100%;
   padding: 20px;
   background-color: #113A52;
   text-align: center;
+  margin: 0;
 }
 
 h2 {
@@ -45,7 +54,7 @@ input{
     border:1px solid #113A52; 
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    width: 35%;
+    width: 40%;
 }
 
 input:focus {
@@ -61,6 +70,7 @@ button {
     -webkit-border-radius: 5px;
     border-radius: 5px; 
     color: white;
+    font-size: .8rem;
 }
 
 button:hover {
@@ -70,7 +80,6 @@ button:hover {
 
 footer {
   font-size: small;
-  width: 70%;
   margin: 0 auto;
   background-color: #00C3B6;
   text-align: center;
@@ -94,3 +103,47 @@ footer {
 .result {
   margin-left: 20px;
 }
+
+#library-search {
+  display: none;
+}
+
+#login-new {
+  display: none;
+}
+
+.or-and {
+  display: inline-block;
+  background-color: #113A52;
+  text-align: center;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  -webkit-border-radius: 80px;
+  border-radius: 80px; 
+  width: auto;
+  height: auto;
+}
+
+#welcome {
+  text-align: right;
+  text-transform: uppercase;
+  padding: 20px;
+  color: #113A52;
+  font-weight: bold;
+}
+
+.new-user-btn {
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+}
+
+
+
+

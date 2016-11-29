@@ -6,26 +6,70 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <h1><i class="fa fa-book" aria-hidden="true"></i> the library</h1>
-    <label>search for author by name: </label>
-    <input id="authorSearch" >
-    <button type="button" onclick="authSearch()"><i class="fa fa-search" aria-hidden="true"></i> search</button>
-    <p class="result" id='result'></p>
+  <h1><i class="fa fa-book" aria-hidden="true"></i> the library</h1>
+  <section id="main">
 
-    <h2>add a book to the library</h2>
-    <label>Tittle:</label> <input id="addTitle">
-    <label>Book:</label> <input id="addBook">
-    <button type="button" onclick="addBook()"><i class="fa fa-plus-circle" aria-hidden="true"></i> add</button>
+    <div id="login" class="wrap">
+    <label>Login: </label>
+    <input id="userName" >
+    <label>Password: </label>
+    <input id="password" >
+    <button type="button" onclick="authLogin()">Sign In</button>
+    <button class="new-user-btn" type="button" onclick="authNewLogin()"><i class="fa fa-user-plus" aria-hidden="true"></i> Create a new user</button>
+    </div>
 
-    <h2>books currently in the library</h2>
-    <button class="btn-list" type="button" onclick="showAllBooks()"><i class="fa fa-list" aria-hidden="true"></i> show books</button>
-    <ol id="allTheBooks">
+    <div id="login-new">
+    <h2>Create a new login:</h2>
+      <div class="wrap">
+      <label>Login: </label>
+      <input id="new-user" >
+      <label>Password: </label>
+      <input id="new-password" >
+      <button type="button" onclick="newLogin()">Create</button>
+      </div>
+    </div>
 
-    </ol>
-  </main>
+    <div id="library-search">
+
+      <p id="welcome"></p>
+
+      <h2>Search by:</h2>
+
+      <div class="wrap">
+      <label>Title: </label>
+      <input id="titleSearch" >
+      <p class='or-and'>or</p>
+      <label>Genre: </label>
+      <input id="genreSearch" >
+      <button type="button" onclick="authSearch()"><i class="fa fa-search" aria-hidden="true"></i> search</button>
+      <ul class="result" id='result'></ul>
+      </div>
+
+      <h2>add a book to the library</h2>
+      
+      <div class="wrap">
+      <label>Tittle:</label> <input id="addTitle">
+      <p class='or-and'>&</p>
+      <label>Book:</label> <input id="addBook">
+      <button type="button" onclick="addBook()"><i class="fa fa-plus-circle" aria-hidden="true"></i> add</button>
+      </div>
+
+      <h2>books currently in the library</h2>
+
+      <div class="wrap">
+      <button class="btn-list" type="button" onclick="showAllBooks()"><i class="fa fa-list" aria-hidden="true"></i> show books available to borrow</button>
+      <ol id="allTheBooks">
+
+      </ol>
+      <button type="button" onclick="borrowBook()"><i class="fa fa-bookmark-o" aria-hidden="true"></i> Borrow Book(s) checked</button>
+      <p id="borrow-ok"></p>
+      </div>
+
+  </div>
+
+  </section>
   <footer>
-    <p>wmdd 4820 2016</p>
+    <p>Fernanda Meira de Azevedo | WMDD-4820 | 2016</p>
   </footer>
   <script src="app.js"></script>
   <script src="https://use.fontawesome.com/3975f2472c.js"></script>
